@@ -1,0 +1,110 @@
+*, *::after, *::before{
+    box-sizing: content-box;
+}
+html,body{  
+    margin:0;
+     padding:0;
+     width: 100%;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+
+}
+.calculatrice{
+    border:1px solid red;
+    width:calc( 100% - 2px);
+    height: calc( 100% - 2px);
+    background-color: #161616;
+    display :flex;
+    flex-direction: column;
+}
+.calculatrice .ecran{
+border:1px solid red;
+width: 100%;
+height:calc(100% - 360px);
+background: honeydew;
+justify-content:flex-end;
+align-items: flex-end;
+padding: 5px;
+margin-bottom: 15;
+font-size: 100px;
+}
+.calculatrice .buttons{
+    width: 100%;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.calculatrice .buttons .function{
+    width: 130%;
+    height: 40px;
+   height: fit-content;
+   display: flex;
+  
+  
+}
+.calculatrice .buttons .pavé_Numérique{
+    color: white;
+    width: 100;
+    height: 288px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.calculatrice .buttons .pavé_Numérique .number{
+    width: 216px;
+    height: 100%;
+    display: block;
+    float: right;
+    columns: 4;
+    grid-gap: 70px;
+    margin-top: 15px;
+  
+    
+   
+}
+.calculatrice .buttons .pavé_Numérique .sign{
+    width: 72px;
+    height: 288px;
+    display: block; 
+    float: left;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.button{
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    background-color: #484848;
+    margin: 16px;
+    float: left;
+    display: flex;
+}
+#zero{
+    color: white;
+    width: 125px;
+    
+}
+#signe{
+    background-color: tomato;
+    color: white;
+}
+#nombre{
+    color: white;
+}
+#fonction{
+    background-color: wheat;
+}
+#virgule{
+    color: white;
+    margin-left: 133px;
+}
+#nbre{
+    color: white;
+    margin-left: 35px;
+}
+#nbree{
+    color: white;
+    margin-left: 60px;
+}
